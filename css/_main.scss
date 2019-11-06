@@ -142,6 +142,47 @@ header{
 	}
 }
 
+footer{
+	.line__menu{
+		width: 100%;
+		height: 200px;
+		background: gray;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		.menu__item{
+
+			:first-child{
+				margin-bottom: 20px;
+			}
+
+			li{
+				list-style: none;
+				margin-bottom: 10px;
+				a{
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.line__copyright{
+		width: 100%;
+		height: 50px;
+		background: black;
+		display: flex;
+		align-items: center;
+		.copyright__text{
+			margin: 80px;
+			color: white;
+		}
+		.copyright__social{
+			position: absolute;
+			margin: 80px;
+			right: 0px;
+		}
+	}
+}
 
 
 
