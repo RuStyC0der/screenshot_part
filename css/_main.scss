@@ -1,52 +1,60 @@
-
-footer{
+footer {
 	flex: 0 0 auto;
 }
 
-header{
-	min-height: 50px;
-  display: flex;
-	flex-direction: column;
-	a{
-		color: $first-color;
-		padding: 20px;}
-}
+// *{ // just for fun
+// 	transition: all .3s;
+// }
 
-.wrapper{
+header {
+	min-height: 50px;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;	
+
+	a {
+		color: $first-color;
+		padding: 20px;
+	}
 }
 
-.wrap{
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.wrap {
+	// width: 80%; // left for the future. Next line too :)
+	// margin: auto;
 	flex: 1 0 auto;
 }
 
-.root__menu_top{
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  background: rgba(38, 23, 175, 0.3);
+.root__menu_top {
+	transition: all .3s;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	background: rgba(38, 23, 175, 0.3);
 	height: 50px;
-	
-	.menu__item{
+
+	.menu__item {
 		list-style-type: none;
 		padding: 15px 10px;
 		margin: 0 10px;
-	
-		a{
+
+		a {
 			color: rgb(7, 22, 90);
 			text-decoration: none;
 		}
-		&:hover{
-			background:whitesmoke;
+
+		&:hover {
+			background: whitesmoke;
 		}
 	}
 }
 
 .root__slider {
-
 	display: flex;
 	z-index: -1;
 	width: 100%;
@@ -58,17 +66,17 @@ header{
 	align-items: flex-end;
 	flex-direction: column;
 
-	.slider__item{
+	.slider__item {
 		flex-direction: column;
 		align-items: center;
 		display: flex;
 		padding: 40px;
 
-		.slider__name{
+		.slider__name {
 			color: $first-color;
 		}
 
-		.slider__text{
+		.slider__text {
 			color: whitesmoke;
 			font-size: 20pt;
 		}
@@ -76,18 +84,19 @@ header{
 }
 
 
-.root__team{
-	.content{
+.root__team {
+	.content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
-		.team__title{
+		.team__title {
 			margin: 50px 50px 10px 50px;
 			color: $first-color;
 			font-size: 20pt;
 		}
-		.team__line{
+
+		.team__line {
 			background-color: $first-color;
 			height: 2px;
 			width: 230px;
@@ -98,20 +107,23 @@ header{
 			text-align: center;
 		}
 
-		.team__items-block{
+		.team__items-block {
 			margin: 50px;
 			display: flex;
 			flex-direction: row;
 			align-content: space-around;
-			.team__item{
-				.item__img{
-					img{
+
+			.team__item {
+				.item__img {
+					img {
 						height: 300px;
 					}
 				}
-				.item__title{
+
+				.item__title {
 					margin: 20px;
 				}
+
 				text-align: center;
 				flex-direction: column;
 				display: flex;
@@ -122,17 +134,19 @@ header{
 
 
 
-.root__counter{
+.root__counter {
 	background-color: $menus-color;
 	width: 100%;
 	height: 200px;
-	.content{
+
+	.content {
 		height: 100%;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		flex-direction: row;
-		.counter__item{
+
+		.counter__item {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -142,47 +156,51 @@ header{
 	}
 }
 
-footer{
-	.line__menu{
+footer {
+	.line__menu {
 		width: 100%;
 		height: 200px;
 		background: $menus-color;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		.menu__item{
 
-			:first-child{
+		.menu__item {
+
+			:first-child {
 				margin-bottom: 20px;
 			}
 
-			li{
+			li {
 				list-style: none;
 				margin-bottom: 10px;
-				a{
+
+				a {
 					color: $white-text-color;
 					text-decoration: none;
 				}
 			}
 		}
 	}
-	.line__copyright{
+
+	.line__copyright {
 		width: 100%;
 		height: 50px;
 		background: black;
 		display: flex;
 		align-items: center;
-		.copyright__text{
+
+		.copyright__text {
 			margin: 70px;
 			color: $white-text-color;
 		}
-		.copyright__social{
+
+		.copyright__social {
+			flex-direction: row;
+			display: flex;
 			position: absolute;
 			margin: 40px;
 			right: 0px;
 		}
 	}
 }
-
-
-

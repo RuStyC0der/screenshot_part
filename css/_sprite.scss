@@ -1,0 +1,53 @@
+a.facebook {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/sprites/social-icons/facebook.png) left top no-repeat;
+    margin: 10px;
+    transition: all .3s;
+}
+
+a.facebook:hover {
+    background-position: left -34px;
+}
+
+
+a.youtube {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/sprites/social-icons/youtube.png) left top no-repeat;
+    margin: 10px;
+    transition: all .3s;
+}
+
+a.youtube:hover {
+    background-position: left -34px;
+}
+
+a.yahoo {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/sprites/social-icons/yahoo.png) left top no-repeat;
+    margin: 10px;
+    transition: all .3s;
+}
+
+a.yahoo:hover {
+    background-position: left -34px;
+}
+
+a.skype {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/sprites/social-icons/skype.png) left top no-repeat;
+    margin: 10px;
+    transition: all .3s;
+}
+
+a.skype:hover {
+    background-position: left -34px;
+}
+
