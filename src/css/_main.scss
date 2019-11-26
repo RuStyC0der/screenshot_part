@@ -210,6 +210,7 @@ header {
 		margin: 0 auto;
 
 		.form__input {
+			font-family: 'PT Sans', sans-serif;
 			position: relative;
 			margin-bottom: 30px;
 			background: transparent;
@@ -225,6 +226,7 @@ header {
 		}
 
 		.form__area {
+			font-family: 'PT Sans', sans-serif;
 			display: block;
 			resize: none;
 			width: 550px;
@@ -237,6 +239,7 @@ header {
 
 
 		select {
+			font-family: 'PT Sans', sans-serif;
 			display: block;
 			position: relative;
 			width: 250px;
@@ -282,7 +285,7 @@ header {
 
 .root__about {
 
-	.content{
+	.content {
 		width: 100%;
 		height: 1200px;
 		display: flex;
@@ -290,58 +293,60 @@ header {
 		align-items: center;
 	}
 
-	.about__img{
+	.about__img {
 		background-image: url("https://via.placeholder.com/500x500");
 		background-position: center;
 		width: 50%;
 		height: 40%;
 	}
 
-	.about__block{
-		border: 2px solid gray;
+	.about__block {
+		border: 2px solid rgb(211, 190, 190);
 		width: 40%;
 		height: 35%;
-		background-color: $white-text-color;
+		background-color: rgb(245, 236, 236);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
-		.about__title{
+
+		.about__title {
 			text-align: center;
 			margin: 20px;
 		}
-		.about__description{
+
+		.about__description {
 			text-align: center;
 			margin: 15px;
 		}
-		.about__items-block{
+
+		.about__items-block {
 			width: 100%;
 			display: flex;
 			justify-content: space-around;
 
-			.about__item{
+			.about__item {
 				flex-direction: column;
 				display: flex;
 				// justify-content: center;
 				align-items: center;
 			}
 
-			.item__img{
-				img{
-					border: 1px solid black;
+			.item__img {
+				img {
 					border-radius: 50%;
 				}
 			}
 
-			.item__vertical{
-				width: 1.5px;
+			.item__vertical {
+				width: 1px;
 				height: 20px;
 				background-color: black;
 
 			}
 
-			.item__desc{
+			.item__desc {
 				padding: 10px;
-				border: 2px solid black;
+				border: 1px solid black;
 				text-align: center;
 			}
 		}
@@ -349,51 +354,64 @@ header {
 }
 
 
-.root__galery{
-	.galery__title{
+.root__galery {
+	.galery__title {
+		font-size: 70px;
+		color: $first-color;
+		font-family: 'Lora', serif;
 		margin-top: 50px;
 		text-align: center;
 	}
-	.galery__desc{
-		margin: 10%;
+
+	.galery__desc {
+		font-family: 'Times New Roman', Times, sans-serif;
+		// font-weight: bold;
+		font-size: 25pt;
+		margin: 100px 15%;
 		text-align: center;
 	}
 
-	// .slider__items{
-	// 	display: flex;
-	// 	width: 100%;
-	// 	height: 400px;
-	// 	.slider__item{
-	// 		width: 100%;
-	// 		height: 100%;
-	// 		background-image: url("https://via.placeholder.com/200x400");
-	// 		background-position: center;
-	// 	}
 
-
-	// }
-	.slider__arrows-block{
+	.slider__arrows-block {
 		width: 100%;
 		height: 50px;
-		background-color: $white-text-color;
+		background-color: white;
 		display: flex;
 		justify-content: space-between;
 
-		.slider__arrow_left{
+		.slider__arrow_left {
 			height: 99%;
 			width: 50px;
-			background-image: url("../img/left_arrow.png");
+			background: url("../img/left_arrow.png");
 			background-position: center;
 			background-size: contain;
-			border:0px solid transparent;
+			border: 0px solid transparent;
+
+			&:hover{
+				height: 99%;
+			width: 50px;
+			background: url("../img/left_arrow.png"), radial-gradient(#215c1f, #ffffff);
+			background-position: center;
+			background-size: contain;
+			border: 0px solid transparent;
+			}
 		}
-		.slider__arrow_right{
-			border:0px solid transparent;
+
+		.slider__arrow_right {
+			border: 0px solid transparent;
 			height: 99%;
 			width: 50px;
 			background-image: url("../img/right_arrow.png");
 			background-position: center;
 			background-size: contain;
+			&:hover{
+			height: 99%;
+			width: 50px;
+			background: url("../img/right_arrow.png"), radial-gradient(#215c1f, #ffffff);
+			background-position: center;
+			background-size: contain;
+			border: 0px solid transparent;
+			}
 		}
 	}
 }
@@ -409,6 +427,29 @@ footer {
 		justify-content: space-around;
 
 		.menu__item {
+
+			#addres::before {
+					margin: 2px;
+					display: inline-block;
+					content: "";
+					width: 10px;
+					height: 15px;
+					background-image: url("../img/map.png");
+					background-position: center;
+					background-size: cover;
+
+			}
+
+			#phone::before {
+				margin: 2px;
+				display: inline-block;
+				content: "";
+				width: 15px;
+				height: 15px;
+				background-image: url("../img/phone.png");
+				background-position: center;
+				background-size: cover;
+			}
 
 			:first-child {
 				margin-bottom: 20px;
